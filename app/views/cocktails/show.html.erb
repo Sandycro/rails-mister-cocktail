@@ -2,3 +2,11 @@
 <%= link_to "Back", root_path  %><br>
 
 <%= link_to 'Add a new dose', new_cocktail_dose_path(@cocktail) %>
+
+<!-- #retrive all doses of the cocktail
+for each dose display the description of the dose
+display the name of the related ingredient -->
+<% @cocktail.doses.each do |dose| %>
+  <%= dose.description %>
+  <%= dose.ingredient.name %>
+<% end %>
