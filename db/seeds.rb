@@ -16,6 +16,11 @@ puts 'Creating Ingredients...'
 end
 puts 'Finished!'
 
+puts 'Cleaning database...'
+Cocktail.destroy_all
 Cocktail.create(name: "Mojito")
 Cocktail.create(name: "Martini")
+Cocktail.create(name: "Mint Julep")
 Cocktail.create(name: "Bloody Mary")
+Cocktail.create(name: "Whiskey Sour")
+Cocktail.create(name: "Caipirinha")
