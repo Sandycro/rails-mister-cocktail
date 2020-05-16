@@ -1,11 +1,18 @@
-<h2><%= @cocktail.name %></h2>
-<%= link_to "◀️ Back", root_path  %><br>
+<div>
+  <div class="container">
+    <h2><%= @cocktail.name %></h2><br>
+  </div>
+</div>
 
-<%= link_to 'Add a new dose', new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
-<!-- #retrive all doses of the cocktail
-for each dose display the description of the dose
-display the name of the related ingredient -->
 <% @cocktail.doses.each do |dose| %>
   <%= dose.description %>
   <%= dose.ingredient.name %>
-<% end %>
+<% end %><br>
+<br>
+<%= link_to 'Add a new dose', new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %><br>
+<br>
+<%= link_to "◀️ Back", root_path  %><br>
+
+<!-- #retrive all doses of the cocktail
+for each dose display the description of the dose
+display the name of the related ingredient -->
