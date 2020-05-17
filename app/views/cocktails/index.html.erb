@@ -17,7 +17,7 @@
           <div class="card-description">
           </div>
             <%= link_to cocktail.name, cocktail_path(cocktail) %>
-            <%= link_to "🗑", root_path(@cocktail), method: :delete,
+            <%= link_to "🗑" root_path, method: :delete,
            data: { confirm: "Are you sure?" } %></li>
         </div>
       </div>
