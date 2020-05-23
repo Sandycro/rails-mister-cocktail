@@ -1,11 +1,11 @@
-<% if @cocktail.photo.attached? %>
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @cocktail.photo.key, height: 300, width: 400, crop: :fill %>')">
-<% end %>
- <h1><%= @cocktail.name %></h1>
- <div class="banner-text" style="float: left; width: 50%">
-    <%= link_to 'Add a new dose', new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %><br>
- </div>
-</div>
+<h1><center><%= @cocktail.name %><center></h1>
+  <center><div class="container"><center>
+    <% if @cocktail.photo.attached? %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @cocktail.photo.key, height: 300, width: 400, crop: :fill %>')">
+    <% end %>
+    </div>
+  </div>
+
 
 <% @cocktail.doses.each do |dose| %>
   <%= dose.description %>
@@ -13,7 +13,8 @@
 <% end %>
 
 <div class="footer">
-  <br><%= link_to "Back", root_path, class: "btn btn-primary" %>
+  <%= link_to 'Add a new dose', new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
+  <%= link_to "Back", root_path, class: "btn btn-primary" %>
 </div>
 
 <!-- #retrive all doses of the cocktail
