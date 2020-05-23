@@ -1,7 +1,10 @@
-<div>
-  <div class="container">
-    <h2><%= @cocktail.name %></h2><br>
-  </div>
+<div class="container">
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+  <h1><%= @cocktail.name %></h1>
+</div>
+  <% if @cocktail.photo.attached? %>
+    <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
+   <% end %>
 </div>
 
 <% @cocktail.doses.each do |dose| %>
@@ -9,10 +12,11 @@
   <%= dose.ingredient.name %>
 <% end %><br>
 <br>
+<div class="container">
 <%= link_to 'Add a new dose', new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %><br>
 <br>
 <div class="link">
-  <%= link_to "◀️ Back", root_path  %><br>
+  <%= link_to "Back", root_path, class: "btn btn-primary" %><br>
 </div>
 <!-- #retrive all doses of the cocktail
 for each dose display the description of the dose

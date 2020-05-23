@@ -1,43 +1,45 @@
-<h1>Cocktails</h1>
-<center>
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1554473059-68a6e2ae8009?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60);">
-  <div class="container" style="color:white;">
-    <h1>Get creative and become a mixologist for a night</h1><br>
-    <h2>Make your own cocktails!</h2>
-    <p>Add ingredients you like</p>
-  </div>
-  </center>
+<h1 style="white"><%= image_tag "img.png",  class: "navbar-brand"  %><center><strong>Tiki Bar Cocktails</strong></h1></center>
+<div class="banner">
+  <%= image_tag "logo.jpg", class: "banner-image" %>
+    <div class="container">
+      <div class="banner-text" style="float: left; width: 50%">
+          <h1>Get creative and become a mixologist for a night</h1><br>
+          <h2>Make your own cocktails!</h2>
+          <p>Add ingredients you like</p>
+        <%= link_to "Add a new cocktail", new_cocktail_path, class: "btn btn-primary"  %><br>
+      </div>
+    </div>
+</div>
+<div class="container">
+  <center><h2>Cocktail menu</h2></center>
 </div>
 
 <div class="container">
   <div class="row">
     <% @cocktails.each do |cocktail| %>
       <div class="col-12 col-md-6 col-lg-3">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://source.unsplash.com/500x400/?cocktail');">
+       <% if cocktail.photo.attached? %>
+          <% background_url = cl_image_path cocktail.photo, width: 200, height: 300, crop: :fill %>
+        <% else %>
+          <% background_url = 'https://source.unsplash.com/500x400/?cocktail' %>
+        <% end %>
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= background_url %>');">
           <div class="card-description">
-          </div>
-            <%= link_to cocktail.name, cocktail_path(cocktail) %>
-            <%= link_to "🗑" root_path, method: :delete,
-           data: { confirm: "Are you sure?" } %></li>
+            <h3><%= link_to cocktail.name, cocktail_path(cocktail) %></h3><br>
+            <%= link_to "Edit📝", cocktail_path(cocktail) %>
+            <%= link_to "Delete🗑", cocktails_path  %>
+         </div>
         </div>
       </div>
     <% end %>
   </div>
 </div>
 
-<div class="container">
-  <div>
-    <%= link_to "Add New cocktail",  new_cocktail_path, class: "btn btn-primary"  %><br>
-  </div>
-</div>
 
 <div class="footer">
   <p>Follow us on</p>
     <div class="footer-links">
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i> Instagram icon that is not displaying</a>
+      <a href="#"><i class="fab fa-facebook"></i> Facebook icon that is not displaying</a>
     </div>
 </div>

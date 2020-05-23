@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 puts 'Cleaning database...'
+puts 'Creating Cocktail...'
 Cocktail.destroy_all
 Cocktail.create(name: "Mojito")
 Cocktail.create(name: "Martini")
@@ -14,12 +15,6 @@ Cocktail.create(name: "Mint Julep")
 Cocktail.create(name: "Bloody Mary")
 Cocktail.create(name: "Whiskey Sour")
 Cocktail.create(name: "Caipirinha")
-
-require "open-uri"
-
-file = URI.open('https://res.cloudinary.com/dxrby0f3r/image/upload/v1589644937/timur-romanov-PSj-v1o2s28-unsplash_y9xutx.jpg')
-cocktail = Cocktail.new(title: 'NES', body: "A great console")
-cocktail.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 
 puts 'Cleaning database...'
 Ingredient.destroy_all

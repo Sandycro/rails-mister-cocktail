@@ -17,12 +17,11 @@
 a {
   color: white;
   padding: 20px;
-
 }
+  a:hover {
+    color: black;
+   }
 
-a:hover {
-  color: black;
-}
 
 .btn {
   padding: $spacer ($spacer * 3);
