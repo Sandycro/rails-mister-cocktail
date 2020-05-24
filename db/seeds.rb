@@ -9,12 +9,12 @@
 puts 'Cleaning database...'
 puts 'Creating Cocktail...'
 Cocktail.destroy_all
-# Cocktail.create(name: "Mojito")
-# Cocktail.create(name: "Martini")
-# Cocktail.create(name: "Mint Julep")
-# Cocktail.create(name: "Bloody Mary")
-# Cocktail.create(name: "Whiskey Sour")
-# Cocktail.create(name: "Caipirinha")
+Cocktail.create(name: "Mojito")
+Cocktail.create(name: "Martini")
+Cocktail.create(name: "Mint Julep")
+Cocktail.create(name: "Bloody Mary")
+Cocktail.create(name: "Whiskey Sour")
+Cocktail.create(name: "Caipirinha")
 
 puts 'Cleaning database...'
 Ingredient.destroy_all
