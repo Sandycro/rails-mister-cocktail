@@ -1,18 +1,22 @@
 <h1 style="white"><%= image_tag "img.png", class: "navbar-brand" %><center><strong>Tiki Bar Cocktails</strong></h1></center>
 <div class="banner">
+<div class="col-12 col-md-6 col-lg-3">
   <%= image_tag "logo.jpg", class: "banner-image" %>
     <div class="container">
-      <div class="banner-text" style="float: left; width: 50%">
+      <div class="banner-text" style="float: left; width: 100%">
           <h1>Get creative and become a mixologist for a night</h1><br>
-          <h2>Make your own cocktails!</h2>
-          <p>Add ingredients you like</p>
+          <h2>Make your own cocktails!</h2><br>
+          <p>Add ingredients you like the most!</p><br>
         <%= link_to "Add a new cocktail", new_cocktail_path, class: "btn btn-primary"  %><br>
       </div>
     </div>
 </div>
+
 <div class="container">
-  <center><h2>Cocktail menu</h2></center>
+    <center><h2>Cocktail menu</h2></center>
+  <div class="col-12 col-md-6 col-lg-3"></div>
 </div>
+
 
 <div class="container">
   <div class="row">
