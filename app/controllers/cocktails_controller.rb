@@ -16,14 +16,14 @@ class CocktailsController < ApplicationController
     if @cocktail.save
       redirect_to cocktail_path(@cocktail)
     else
-      render 'new'
+      render :new
     end
   end
 
   def destroy
     @cocktail = Cocktail.find(params[:id])
     @cocktail.destroy
-    redirect_to cocktails_path cocktail_path, :notice => "Your post has been deleted successfully."
+    redirect_to cocktails_path cocktail_path
   end
 
   def cocktail_params
