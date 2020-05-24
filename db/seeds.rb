@@ -9,8 +9,8 @@
 puts 'Cleaning database...'
 puts 'Creating Cocktail...'
 Cocktail.destroy_all
-Cocktail.create(name: "Mojito")
-Cocktail.create(name: "Martini")
+# Cocktail.create(name: "Mojito")
+# Cocktail.create(name: "Martini")
 # Cocktail.create(name: "Mint Julep")
 # Cocktail.create(name: "Bloody Mary")
 # Cocktail.create(name: "Whiskey Sour")
@@ -21,7 +21,7 @@ Ingredient.destroy_all
 
 puts 'Creating Ingredient...'
 
-["Vodka", "Rum", "grenadine", "Tequila", "Coke", "Juice", "Gin", "lime", "soda", "brown sugar", "lemon", "ice", "mint leaves"].each do |attribute|
+["Coconut", "Pineapple juice", "Blue curacao", "Cream", "Strawberries", "Cachaça", "Kahlúa", "Baileys", "Whiskey", "Vermouth", "Vodka", "Rum", "Grenadine", "Tequila", "Coke", "Orange uice", "Gin", "Lime", "Soda", "Brown sugar", "Ice", "Mint leaves"].each do |attribute|
   ingredient = Ingredient.create(name: attribute)
   puts "Created! #{ingredient.name}"
 end

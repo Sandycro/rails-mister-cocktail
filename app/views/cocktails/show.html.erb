@@ -1,17 +1,17 @@
-<h1><center><%= @cocktail.name %><center></h1>
-  <center><div class="container"><center>
-    <% if @cocktail.photo.attached? %>
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @cocktail.photo.key, height: 300, width: 400, crop: :fill %>')">
-    <% end %>
-    </div>
+<%= image_tag "img.png",  class: "navbar-brand" %>
+<h1><center><%= @cocktail.name %><center></h1><br>
+<center><div class="container"><center>
+  <% if @cocktail.photo.attached? %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @cocktail.photo.key, height: 300, width: 400, crop: :fill %>')">
+  <% end %>
   </div>
-
-
+</div>
+<div class="doses">
 <% @cocktail.doses.each do |dose| %>
   <%= dose.description %>
   <%= dose.ingredient.name %>
 <% end %>
-
+</div>
 <div class="footer">
   <%= link_to 'Add a new dose', new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
   <%= link_to "Back", root_path, class: "btn btn-primary" %>

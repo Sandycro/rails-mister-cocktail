@@ -57,6 +57,12 @@ position: relative;
   margin-bottom: 30px;
 }
 
+.banner-form-img {
+  height: 400px;
+  width: 720px;
+  border-radius: 9px;
+}
+
 a {
   color: white;
   padding: 20px;
@@ -86,6 +92,7 @@ a {
 .form-inputs {
   margin-left: 10px;
   margin-right: 10px;
+  font-size: 20px;
 }
 
 .footer-links {
@@ -101,4 +108,8 @@ a {
 }
 .footer-links a:hover {
   opacity: 1;
+}
+
+.container {
+  margin-bottom: 20px;
 }

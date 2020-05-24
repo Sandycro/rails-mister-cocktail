@@ -34,7 +34,7 @@ class CocktailsController < ApplicationController
   def destroy
     @cocktail = Cocktail.find(params[:id])
     @cocktail.destroy
-    redirect_to coocktail_path, :notice => "Your post has been deleted successfully."
+    redirect_to cocktails_path cocktail_path, :notice => "Your post has been deleted successfully."
   end
 
   def cocktail_params
