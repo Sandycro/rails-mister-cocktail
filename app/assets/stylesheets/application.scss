@@ -4,9 +4,10 @@
 @import "config/bootstrap_variables";
 
 // External libraries
-@import "bootstrap/scss/bootstrap"; // picks it up in node_modules!
-// @import "font-awesome-sprockets";
+@import "bootstrap/scss/bootstrap";
+// @import "scss/fontawesome. scss";
 // @import "font-awesome";
+// picks it up in node_modules!
 
 // Your CSS partials
 // @import "layouts/index";
