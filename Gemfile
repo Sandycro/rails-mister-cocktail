@@ -24,7 +24,7 @@ gem 'turbolinks', '~> 5'
 gem 'dotenv-rails', groups: [:development, :test]
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
-gem 'font-awesome-rails'
+gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
