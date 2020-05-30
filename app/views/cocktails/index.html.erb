@@ -1,22 +1,17 @@
 <h1 style="white"><%= image_tag "img.png", class: "navbar-brand" %><center><strong>Tiki Bar Cocktails</strong></h1></center>
-<div class="banner">
-<div class="col-12 col-md-6 col-lg-3">
-  <%= image_tag "logo.jpg", class: "banner-image" %>
-    <div class="container">
-      <div class="banner-text" style="float: left; width: 100%">
-          <h1>Get creative and become a mixologist for a night</h1><br>
-          <h2>Make your own cocktails!</h2><br>
-          <p>Add ingredients you like the most!</p><br>
-        <%= link_to "Add a new cocktail", new_cocktail_path, class: "btn btn-primary"  %><br>
-      </div>
-    </div>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(<%= image_path "logo.jpg" %>);">
+  <div class="container text-light">
+    <h1>Get creative in <strong class="text-primary">Tiki Bar</strong> and become a mixologist for a night.</h1>
+    <h2>Make your own cocktails!</h2><br>
+    <p>Add ingredients you like the most!</p><br>
+    <%= link_to "Add a new cocktail", new_cocktail_path, class: "btn btn-primary"  %><br>
+  </div>
 </div>
 
 <div class="container">
     <center><h2>Cocktail menu</h2></center>
   <div class="col-12 col-md-6 col-lg-3"></div>
 </div>
-
 
 <div class="container">
   <div class="row">
@@ -30,8 +25,8 @@
         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= background_url %>');">
           <div class="card-description">
             <h3><%= link_to cocktail.name, cocktail_path(cocktail) %></h3><br>
-            <%= link_to "Edit📝", cocktail_path(cocktail) %>
-            <%= link_to "Delete🗑", cocktail, method: :delete, data: {confirm: "Are you sure?"} %>
+            <%= link_to "", cocktail_path(cocktail), class: "fas fa-edit"%>
+            <%= link_to "", cocktail, method: :delete, data: {confirm: "Are you sure?"}, class: "far fa-trash-alt" %>
          </div>
         </div>
       </div>
@@ -39,10 +34,11 @@
   </div>
 </div>
 
-  <div class="footer">
-    <p>Follow us on</p>
-      <div class="footer-links">
-        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
-      </div>
+ <div class="footer">
+  <p>Follow us on</p>
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
   </div>
+</div>
+

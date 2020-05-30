@@ -7,21 +7,12 @@ body{
 }
 
 .banner{
-position: relative;
-}// Specific CSS for your home-page
-
-.banner-image{
-  height: 750px;
-  width: 100vw;
-}
-
-.banner-text {
-  margin-top: 70px;
-  position: absolute;
-  left: 5%;
-  color: white;
-  top: -16px;
-
+  position: relative;
+  background-size: cover;
+  padding: 100px 0;
+  p {
+    font-size: 24px;
+  }
 }
 
 .card-category {
