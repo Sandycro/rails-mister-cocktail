@@ -1,4 +1,9 @@
-<%= image_tag "img.png", class: "navbar-brand" %>
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <!-- <div class="container d-flex"> -->
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <%= image_tag "img.png" %>
+    <% end %>
+</div>
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-8">
