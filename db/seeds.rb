@@ -35,7 +35,7 @@ puts 'Cleaning database...'
 # Ingredient.create(name: "Grenadine")
 # Ingredient.create(name: "Tequila")
 # Ingredient.create(name: "Coke")
-# Ingredient.create(name: "Orange uice")
+# Ingredient.create(name: "Orange juice")
 # Ingredient.create(name: "Vodka")
 # Ingredient.create(name: "Gin")
 # Ingredient.create(name: "Vodka")
