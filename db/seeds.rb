@@ -17,11 +17,34 @@
 # Cocktail.create(name: "Caipirinha")
 
 
-puts 'Creating Ingredient...'
-
-["Coconut", "Pineapple juice", "Blue curacao", "Cream", "Strawberries", "Cachaça", "Kahlúa", "Baileys", "Whiskey", "Vermouth", "Vodka", "Rum", "Grenadine", "Tequila", "Coke", "Orange uice", "Gin", "Lime", "Soda", "Brown sugar", "Ice", "Mint leaves", "Tomato juice", "Salt", "Pepper", "Worcestershire Sauce"].each do |attribute|
-  ingredient = Ingredient.create(name: attribute)
-  puts "Created! #{ingredient.name}"
-end
-puts 'Finished!'
-
+puts 'Cleaning database...'
+#puts 'Creating Ingredient...'
+# Ingredient.destroy_all
+# Ingredient.create(name: "Coconut")
+# Ingredient.create(name: "Pineapple juice")
+# Ingredient.create(name: "Blue curacao")
+# Ingredient.create(name: "Cream")
+# Ingredient.create(name: "Strawberries")
+# Ingredient.create(name: "Cachaça")
+# Ingredient.create(name: "Kahlúa")
+# Ingredient.create(name: "Baileys")
+# Ingredient.create(name: "Whiskey")
+# Ingredient.create(name: "Vermouth")
+# Ingredient.create(name: "Vodka")
+# Ingredient.create(name: "Rum")
+# Ingredient.create(name: "Grenadine")
+# Ingredient.create(name: "Tequila")
+# Ingredient.create(name: "Coke")
+# Ingredient.create(name: "Orange uice")
+# Ingredient.create(name: "Vodka")
+# Ingredient.create(name: "Gin")
+# Ingredient.create(name: "Vodka")
+# Ingredient.create(name: "Lime")
+# Ingredient.create(name: "Soda")
+# Ingredient.create(name: "Brown sugar")
+# Ingredient.create(name: "Ice")
+# Ingredient.create(name: "Mint leaves")
+# Ingredient.create(name: "Tomato juice")
+# Ingredient.create(name: "Salt")
+# Ingredient.create(name: "Pepper")
+# Ingredient.create(name: "Worcestershire Sauce")
