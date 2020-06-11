@@ -16,8 +16,6 @@
 # Cocktail.create(name: "Whiskey Sour")
 # Cocktail.create(name: "Caipirinha")
 
-puts 'Cleaning database...'
-Ingredient.destroy_all
 
 puts 'Creating Ingredient...'
 
