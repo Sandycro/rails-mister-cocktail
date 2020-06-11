@@ -21,7 +21,7 @@ Ingredient.destroy_all
 
 puts 'Creating Ingredient...'
 
-["Coconut", "Pineapple juice", "Blue curacao", "Cream", "Strawberries", "Cachaça", "Kahlúa", "Baileys", "Whiskey", "Vermouth", "Vodka", "Rum", "Grenadine", "Tequila", "Coke", "Orange uice", "Gin", "Lime", "Soda", "Brown sugar", "Ice", "Mint leaves"].each do |attribute|
+["Coconut", "Pineapple juice", "Blue curacao", "Cream", "Strawberries", "Cachaça", "Kahlúa", "Baileys", "Whiskey", "Vermouth", "Vodka", "Rum", "Grenadine", "Tequila", "Coke", "Orange uice", "Gin", "Lime", "Soda", "Brown sugar", "Ice", "Mint leaves", "Tomato juice", "Salt", "Pepper", "Worcestershire Sauce"].each do |attribute|
   ingredient = Ingredient.create(name: attribute)
   puts "Created! #{ingredient.name}"
 end
