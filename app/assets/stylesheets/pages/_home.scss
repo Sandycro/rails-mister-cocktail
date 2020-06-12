@@ -75,15 +75,15 @@ a {
 
 
 .footer {
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 20px;
-  background: white;
+  background: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100px;
   padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
+  color: blue;
 }
 
 .footer-show {
@@ -95,29 +95,31 @@ a {
   justify-content: space-around;
   height: 100px;
   padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
-}
-.form-inputs {
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: 20px;
 }
 
 .footer-links {
   display: flex;
   align-items: center;
+  color: white;
 }
-.footer-links a {
-  color: black;
-  opacity: 0.15;
-  text-decoration: none;
-  font-size: 24px;
-  padding: 0px 10px;
-}
+// .footer-links a {
+//   color: white;
+//   opacity: 0.15;
+//   text-decoration: none;
+//   font-size: 24px;
+//   padding: 0px 10px;
+// }
 .footer-links a:hover {
   opacity: 1;
+  color: blue;
 }
 
 .container {
   margin-bottom: 20px;
+}
+
+.form-inputs {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
 }
