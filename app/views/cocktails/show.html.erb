@@ -1,9 +1,3 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <!-- <div class="container d-flex"> -->
-    <%= link_to root_path, class: "navbar-brand" do %>
-      <%= image_tag "img.png" %>
-    <% end %>
-</div>
 <h1><center><%= @cocktail.name %><center></h1><br>
 <center><div class="container"><center>
   <% if @cocktail.photo.attached? %>
